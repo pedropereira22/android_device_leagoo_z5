@@ -130,10 +130,6 @@ TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/recovery.fstab
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 TARGET_USERIMAGES_USE_EXT4 := true
 
-# SELinux
-BOARD_SEPOLICY_DIRS := \
-       device/leagoo/z5/sepolicy
-
 # Hack for building without kernel sources
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
 
