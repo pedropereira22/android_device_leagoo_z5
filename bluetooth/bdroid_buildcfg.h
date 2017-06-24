@@ -1,6 +1,6 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Infinix X510"
+#define BTM_DEF_LOCAL_NAME   "Leagoo Z5"
 
 #endif

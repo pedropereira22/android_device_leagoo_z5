@@ -1,14 +1,25 @@
-## Specify phone tech before including full_phone
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit from hardware-specific part of the product configuration
+$(call inherit-product, device/leagoo/z5/device.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := z5
 
-# Inherit device configuration
-$(call inherit-product, device/leagoo/z5/device_z5.mk)
+EXTENDED_FONT_FOOTPRINT := true
 
-## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := z5
 PRODUCT_NAME := pa_z5
-PRODUCT_BRAND := LEAGOO
-PRODUCT_MODEL := Z5
-PRODUCT_MANUFACTURER := LEAGOO
+PRODUCT_BRAND := Leagoo
+PRODUCT_MODEL := z5
+PRODUCT_MANUFACTURER := leagoo
+PRODUCT_RESTRICT_VENDOR_FILES := false
+
+# Boot animation
+TARGET_SCREEN_HEIGHT      := 854
+TARGET_SCREEN_WIDTH       := 480
+TARGET_BOOTANIMATION_NAME := 720
+
+PRODUCT_DEFAULT_LANGUAGE := en
+PRODUCT_DEFAULT_REGION   := US
