@@ -4,7 +4,7 @@
 PRODUCT_RELEASE_NAME := z5
 
 # Inherit some common aosp stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+#$(call inherit-product, vendor/pa/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/leagoo/z5/pa_z5.mk)

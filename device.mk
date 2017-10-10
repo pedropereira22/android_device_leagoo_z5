@@ -136,6 +136,9 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_TAGS += dalvik.gc.type-precise
 
+PRODUCT_PACKAGES += \
+	libmtkplayer
+
 # Charger
 PRODUCT_PACKAGES += \
       charger_res_images
