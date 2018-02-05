@@ -37,7 +37,7 @@ ro.sys.usb.mtp.whql.enable=0
 sys.ipo.pwrdncap=2
 
 F
-persist.sys.usb.config=mtp,adb
+persist.sys.usb.config=mtp
 
 # USB BICR function
 ro.sys.usb.bicr=yes
@@ -68,7 +68,7 @@ sys.ipo.disable=1
 
 #ro.operator.optr=CUST
 
-ro.sf.lcd_density=220
+ro.sf.lcd_density=240
 
 # button jack mode & switch
 persist.sys.button_jack_profile=volume

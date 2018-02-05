@@ -2,7 +2,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
-$(call inherit-product, device/leagoo/z5/vendor/copyfiles.mk)
+# $(call inherit-product, device/leagoo/z5/vendor/copyfiles.mk)
 $(call inherit-product, vendor/leagoo/z5/z5-vendor-blobs.mk)
 
 LOCAL_PATH := device/leagoo/z5
@@ -14,7 +14,7 @@ PRODUCT_AAPT_CONFIG := normal xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Recovery allowed devices
-TARGET_OTA_ASSERT_DEVICE := z5,Z5,b6580_weg_a_m
+# TARGET_OTA_ASSERT_DEVICE := d5110,d5110_leagoo,leagoo_z5,leagoo_z5_sprout,leagoo D5110,z5,hot2
 
 PRODUCT_PACKAGES += \
    libxlog
@@ -136,9 +136,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_TAGS += dalvik.gc.type-precise
 
-PRODUCT_PACKAGES += \
-	libmtkplayer
-
 # Charger
 PRODUCT_PACKAGES += \
       charger_res_images
@@ -170,7 +167,11 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml \
+    $(LOCAL_PATH)/configs/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml 
+
+# MiraVision
+PRODUCT_PACKAGES += \
+	MiraVision
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.adb.secure=0 \
@@ -197,10 +198,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libnl_2 \
     libtinyxml
-    
-# Browser
-PRODUCT_PACKAGES += \
-    Gello
 
 # FM Radio
 PRODUCT_PACKAGES += \
